@@ -8,14 +8,14 @@ export {
   listVersions,
   listPages,
   getPageById,
-} from "@/actions/pages"
+} from "../../src/actions/pages"
 
-export { saveGlobals, getAllGlobals } from "@/actions/globals"
+export { saveGlobals, getAllGlobals } from "../../src/actions/globals"
 
-export { savePost, publishPost, deletePost, listPosts, getPostById } from "@/actions/posts"
+export { savePost, publishPost, deletePost, listPosts, getPostById } from "../../src/actions/posts"
 
-export { uploadImageForTenant } from "@/actions/upload"
+export { uploadImageForTenant } from "../../src/actions/upload"
 
-export { createTenant, linkUserToTenant } from "@/actions/tenants"
+export { createTenant, linkUserToTenant } from "../../src/actions/tenants"
 
-export { createTenantWizard } from "@/actions/createTenantWizard"
+export { createTenantWizard } from "../../src/actions/createTenantWizard"
