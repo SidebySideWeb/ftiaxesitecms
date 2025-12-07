@@ -1,0 +1,97 @@
+"use client"
+
+import type React from "react"
+
+import { useRouter } from "next/navigation"
+import { motion } from "framer-motion"
+import { Plus, Trash2 } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { DataTable } from "@/components/ui/datatable"
+import { usePosts, type Post } from "@/lib/hooks/use-posts"
+import { Badge } from "@/components/ui/badge"
+
+export default function PostsListPage() {
+  const router = useRouter()
+  const { posts, deletePost, isLoading } = usePosts()
+
+  const handleDelete = (e: React.MouseEvent, id: string) => {
+    e.stopPropagation()
+    if (confirm("Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το άρθρο;")) {
+      deletePost(id)
+    }
+  }
+
+  const columns = [
+    {
+      key: "title",
+      label: "Τίτλος",
+      render: (row: Post) => <span className="font-medium">{row.title}</span>,
+    },
+    {
+      key: "status",
+      label: "Κατάσταση",
+      render: (row: Post) => (
+        <Badge variant={row.status === "published" ? "default" : "secondary"} className="rounded-full">
+          {row.status === "published" ? "Δημοσιευμένο" : "Πρόχειρο"}
+        </Badge>
+      ),
+    },
+    {
+      key: "publishedAt",
+      label: "Δημοσίευση",
+      render: (row: Post) => (
+        <span className="text-muted-foreground">
+          {row.publishedAt ? new Date(row.publishedAt).toLocaleDateString("el-GR") : "—"}
+        </span>
+      ),
+    },
+    {
+      key: "actions",
+      label: "",
+      render: (row: Post) => (
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={(e) => handleDelete(e, row.id)}
+          className="h-8 w-8 rounded-lg text-destructive hover:bg-destructive/10 hover:text-destructive"
+        >
+          <Trash2 className="h-4 w-4" />
+        </Button>
+      ),
+    },
+  ]
+
+  if (isLoading) {
+    return <div className="flex h-64 items-center justify-center text-muted-foreground">Φόρτωση...</div>
+  }
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-semibold">Άρθρα</h1>
+          <p className="text-muted-foreground">Διαχειριστείτε τα blog posts</p>
+        </div>
+      </div>
+
+      <DataTable
+        data={posts}
+        columns={columns}
+        searchKey="title"
+        onRowClick={(row) => router.push(`/posts/${row.id}`)}
+      />
+
+      <motion.div
+        className="fixed bottom-8 right-8"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 0.3 }}
+      >
+        <Button onClick={() => router.push("/posts/new")} size="lg" className="h-14 gap-2 rounded-2xl px-6 shadow-lg">
+          <Plus className="h-5 w-5" />
+          Νέο Άρθρο
+        </Button>
+      </motion.div>
+    </div>
+  )
+}

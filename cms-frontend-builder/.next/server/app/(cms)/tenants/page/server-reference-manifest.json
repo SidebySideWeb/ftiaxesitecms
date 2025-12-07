@@ -1,0 +1,35 @@
+{
+  "node": {
+    "40159845a2c5689bc77ccbfb8d1b4ef5d7962b77f7": {
+      "workers": {
+        "app/(cms)/tenants/page": {
+          "moduleId": 67548,
+          "async": false,
+          "exportedName": "createTenant",
+          "filename": "src/actions/tenants.ts"
+        }
+      },
+      "layer": {
+        "app/(cms)/tenants/page": "action-browser"
+      },
+      "exportedName": "createTenant",
+      "filename": "src/actions/tenants.ts"
+    },
+    "60bbc5029696ecf9c7d8fd52534f6065dd668b9fc0": {
+      "workers": {
+        "app/(cms)/tenants/page": {
+          "moduleId": 67548,
+          "async": false,
+          "exportedName": "linkUserToTenant",
+          "filename": "src/actions/tenants.ts"
+        }
+      },
+      "layer": {
+        "app/(cms)/tenants/page": "action-browser"
+      },
+      "exportedName": "linkUserToTenant",
+      "filename": "src/actions/tenants.ts"
+    }
+  },
+  "edge": {}
+}

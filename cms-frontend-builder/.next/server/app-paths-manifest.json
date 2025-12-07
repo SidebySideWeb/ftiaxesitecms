@@ -1,0 +1,13 @@
+{
+  "/(cms)/dashboard/page": "app/(cms)/dashboard/page.js",
+  "/(cms)/globals/page": "app/(cms)/globals/page.js",
+  "/(cms)/pages/[id]/edit/page": "app/(cms)/pages/[id]/edit/page.js",
+  "/(cms)/pages/page": "app/(cms)/pages/page.js",
+  "/(cms)/posts/[id]/page": "app/(cms)/posts/[id]/page.js",
+  "/(cms)/posts/page": "app/(cms)/posts/page.js",
+  "/(cms)/settings/page": "app/(cms)/settings/page.js",
+  "/(cms)/tenants/page": "app/(cms)/tenants/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js"
+}

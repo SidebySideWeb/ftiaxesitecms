@@ -1,0 +1,20 @@
+{
+  "node": {
+    "00b2946ef30aacf41c89fa495e7737407fc4507ff5": {
+      "workers": {
+        "app/(cms)/pages/page": {
+          "moduleId": 79473,
+          "async": false,
+          "exportedName": "listPages",
+          "filename": "src/actions/pages.ts"
+        }
+      },
+      "layer": {
+        "app/(cms)/pages/page": "action-browser"
+      },
+      "exportedName": "listPages",
+      "filename": "src/actions/pages.ts"
+    }
+  },
+  "edge": {}
+}

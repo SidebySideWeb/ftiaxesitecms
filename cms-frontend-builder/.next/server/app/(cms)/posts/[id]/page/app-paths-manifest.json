@@ -1,0 +1,3 @@
+{
+  "/(cms)/posts/[id]/page": "app/(cms)/posts/[id]/page.js"
+}

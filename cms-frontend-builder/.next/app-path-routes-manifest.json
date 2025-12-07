@@ -1,0 +1,13 @@
+{
+  "/(cms)/dashboard/page": "/dashboard",
+  "/(cms)/globals/page": "/globals",
+  "/(cms)/pages/[id]/edit/page": "/pages/[id]/edit",
+  "/(cms)/pages/page": "/pages",
+  "/(cms)/posts/[id]/page": "/posts/[id]",
+  "/(cms)/posts/page": "/posts",
+  "/(cms)/settings/page": "/settings",
+  "/(cms)/tenants/page": "/tenants",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/page": "/"
+}

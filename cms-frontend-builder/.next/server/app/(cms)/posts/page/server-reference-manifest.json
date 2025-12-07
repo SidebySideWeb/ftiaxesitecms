@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0009b2d854ecdafc67348394fb57003b51618a8d67": {
+      "workers": {
+        "app/(cms)/posts/page": {
+          "moduleId": 216,
+          "async": false,
+          "exportedName": "listPosts",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "layer": {
+        "app/(cms)/posts/page": "action-browser"
+      },
+      "exportedName": "listPosts",
+      "filename": "src/actions/posts.ts"
+    },
+    "400156b8ce56fc4d15c8949f5298bb26e8bd76e735": {
+      "workers": {
+        "app/(cms)/posts/page": {
+          "moduleId": 216,
+          "async": false,
+          "exportedName": "getPostById",
+          "filename": "src/actions/posts.ts"
+        }
+      },
+      "layer": {
+        "app/(cms)/posts/page": "action-browser"
+      },
+      "exportedName": "getPostById",
+      "filename": "src/actions/posts.ts"
+    }
+  },
+  "edge": {}
+}

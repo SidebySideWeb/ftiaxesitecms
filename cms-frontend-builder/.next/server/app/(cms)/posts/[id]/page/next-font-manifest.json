@@ -1,0 +1,12 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/cms-frontend-builder/app/(cms)/posts/[id]/page": [
+      "static/media/5476f68d60460930-s.p.c995e352.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}
