@@ -136,7 +136,7 @@ export default function DashboardPage() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Δημιουργήθηκε</p>
-                <p className="font-medium">{new Date(activeTenant.created_at || activeTenant.createdAt || Date.now()).toLocaleDateString("el-GR")}</p>
+                <p className="font-medium">{new Date(activeTenant.created_at || Date.now()).toLocaleDateString("el-GR")}</p>
               </div>
             </div>
           </CardContent>
