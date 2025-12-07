@@ -8,6 +8,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { usePageBlocks, usePage, usePages, type Block } from "@/lib/hooks/use-pages"
 import { savePageSections, publishPage, setDraft, clonePage, restoreVersion, listVersions } from "@/lib/actions"
+import { useTenants } from "@/lib/hooks/use-tenants"
 import { useTransition } from "react"
 import debounce from "lodash.debounce"
 import { BlockList } from "@/components/editor/block-list"
@@ -24,6 +25,7 @@ export default function PageEditorPage({ params }: { params: Promise<{ id: strin
   const { page } = usePage(id === "new" ? "1" : id)
   const { blocks, setBlocks } = usePageBlocks(id === "new" ? "1" : id)
   const { deletePage } = usePages()
+  const { activeTenant } = useTenants()
   const [selectedBlockId, setSelectedBlockId] = useState<string | null>(null)
   const [saveStatus, setSaveStatus] = useState<SaveStatus>("idle")
   const [isPublished, setIsPublished] = useState(page?.status === "published")
@@ -125,14 +127,29 @@ export default function PageEditorPage({ params }: { params: Promise<{ id: strin
       const newStatus = !isPublished
       
       if (newStatus) {
-        const result = await publishPage(id)
-        if (result.error) {
+        if (!activeTenant?.domain) {
           toast({
             title: "Error",
-            description: result.error,
+            description: "Tenant domain not found",
             variant: "destructive",
           })
           return
+        }
+        try {
+          const result = await publishPage(id, activeTenant.domain)
+          if (result.ok) {
+            toast({
+              title: "Success",
+              description: "Page published successfully",
+            })
+            setIsPublished(true)
+          }
+        } catch (error) {
+          toast({
+            title: "Error",
+            description: error instanceof Error ? error.message : "Failed to publish page",
+            variant: "destructive",
+          })
         }
       } else {
         const result = await setDraft(id)
@@ -143,6 +160,13 @@ export default function PageEditorPage({ params }: { params: Promise<{ id: strin
             variant: "destructive",
           })
           return
+        }
+        if (result.data) {
+          toast({
+            title: "Success",
+            description: "Page set to draft",
+          })
+          setIsPublished(false)
         }
       }
 
