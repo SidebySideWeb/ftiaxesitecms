@@ -1,6 +1,6 @@
 {
   "node": {
-    "00b2946ef30aacf41c89fa495e7737407fc4507ff5": {
+    "0048dcfaa6b58a52a88fe46dca566ac0267b67cd50": {
       "workers": {
         "app/(cms)/dashboard/page": {
           "moduleId": 25558,
@@ -15,7 +15,7 @@
       "exportedName": "listPages",
       "filename": "src/actions/pages.ts"
     },
-    "0009b2d854ecdafc67348394fb57003b51618a8d67": {
+    "003abdea1bebe025a462efeac684d81daa6c40da37": {
       "workers": {
         "app/(cms)/dashboard/page": {
           "moduleId": 25558,
@@ -30,7 +30,7 @@
       "exportedName": "listPosts",
       "filename": "src/actions/posts.ts"
     },
-    "400156b8ce56fc4d15c8949f5298bb26e8bd76e735": {
+    "404597e3dcd148939d0f10f47392d6103b22e2c95d": {
       "workers": {
         "app/(cms)/dashboard/page": {
           "moduleId": 25558,

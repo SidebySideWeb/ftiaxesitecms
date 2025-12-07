@@ -1,6 +1,6 @@
 {
   "node": {
-    "00b2946ef30aacf41c89fa495e7737407fc4507ff5": {
+    "0048dcfaa6b58a52a88fe46dca566ac0267b67cd50": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -15,7 +15,7 @@
       "exportedName": "listPages",
       "filename": "src/actions/pages.ts"
     },
-    "60509bd3d21a4f5dbfb69401201133bd409939a915": {
+    "6036ac1da91a1a214dd6412c83d64dc1a67af2c3b9": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -30,7 +30,7 @@
       "exportedName": "savePageSections",
       "filename": "src/actions/pages.ts"
     },
-    "60c8151fe9642c04202c934485fc663df701bae5c3": {
+    "60dca8631de28b9b80a62bc7be34e80f05988fa577": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -45,7 +45,7 @@
       "exportedName": "publishPage",
       "filename": "src/actions/pages.ts"
     },
-    "4039844c4edce9f88aa770c21f251335b9dc55dc8f": {
+    "40133235f29673074bc9a6f97f8e7b0c0d0aa9d5e8": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -60,7 +60,7 @@
       "exportedName": "setDraft",
       "filename": "src/actions/pages.ts"
     },
-    "70955127ed6e499407f17658eae21ccbff8fced13e": {
+    "7068809acd1e2d9a4c7230c4363fd0eb01e0d94bfb": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -75,7 +75,7 @@
       "exportedName": "clonePage",
       "filename": "src/actions/pages.ts"
     },
-    "6084208bf768c3eb69438f6190e8aa8a9d95a15c7d": {
+    "60373183ac6f6bca9bf51e8c841f7a552c6d5ea031": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -90,7 +90,7 @@
       "exportedName": "restoreVersion",
       "filename": "src/actions/pages.ts"
     },
-    "40d2b340c3ab611bd6de0ec29a015d46400acb3e52": {
+    "40dc10529ca4ee2ac52f3c8d1e7c02dbf402b05d86": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
@@ -105,7 +105,7 @@
       "exportedName": "listVersions",
       "filename": "src/actions/pages.ts"
     },
-    "4035acdded56aef54f8fe0527261325aa697264fc5": {
+    "40295af451c37fe4e2d0e1c9350d8a63cf8237a8f3": {
       "workers": {
         "app/(cms)/pages/[id]/edit/page": {
           "moduleId": 84677,
