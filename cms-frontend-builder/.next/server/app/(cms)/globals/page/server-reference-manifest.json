@@ -1,6 +1,6 @@
 {
   "node": {
-    "00013de38bbe598ae2ea053d10eb448f9d6abdbdc8": {
+    "00949c7eb793722b58b20807ecfab2818077cb52ff": {
       "workers": {
         "app/(cms)/globals/page": {
           "moduleId": 8398,
@@ -15,7 +15,7 @@
       "exportedName": "getAllGlobals",
       "filename": "src/actions/globals.ts"
     },
-    "40b4f9f7bbc42e6b7abac6c0ecfee6d1c8bea699f3": {
+    "40254630d37b66126cd66bb2177028253874678d5f": {
       "workers": {
         "app/(cms)/globals/page": {
           "moduleId": 8398,

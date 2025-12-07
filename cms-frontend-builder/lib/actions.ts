@@ -1,5 +1,8 @@
-// Re-export server actions from main src directory
-// Using path alias @/actions/* which maps to ../src/actions/* in tsconfig
+/**
+ * Re-export server actions from main src directory
+ * This file serves as a central export point for all server actions
+ * Using relative paths for maximum compatibility with TypeScript module resolution
+ */
 
 // Pages actions
 export {
@@ -11,19 +14,19 @@ export {
   listVersions,
   listPages,
   getPageById,
-} from "@/actions/pages"
+} from "../../src/actions/pages"
 
 // Globals actions
-export { saveGlobals, getAllGlobals } from "@/actions/globals"
+export { saveGlobals, getAllGlobals } from "../../src/actions/globals"
 
 // Posts actions
-export { savePost, publishPost, deletePost, listPosts, getPostById } from "@/actions/posts"
+export { savePost, publishPost, deletePost, listPosts, getPostById } from "../../src/actions/posts"
 
 // Upload actions
-export { uploadImageForTenant } from "@/actions/upload"
+export { uploadImageForTenant } from "../../src/actions/upload"
 
 // Tenants actions
-export { createTenant, linkUserToTenant } from "@/actions/tenants"
+export { createTenant, linkUserToTenant } from "../../src/actions/tenants"
 
 // Tenant wizard
-export { createTenantWizard } from "@/actions/createTenantWizard"
+export { createTenantWizard } from "../../src/actions/createTenantWizard"

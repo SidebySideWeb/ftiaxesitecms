@@ -1,6 +1,6 @@
 {
   "node": {
-    "40a0a7d44f91bc91a3e9afac09b7ee500da88235e6": {
+    "4028bcd6cc20180ec2dfa6741bb5266a10d3a96d2f": {
       "workers": {
         "app/(cms)/tenants/page": {
           "moduleId": 67548,
@@ -15,7 +15,7 @@
       "exportedName": "createTenant",
       "filename": "src/actions/tenants.ts"
     },
-    "60fe34dcc37d4ea1d46459bcd24fedc526841f2e1a": {
+    "6099395440b5e61255771a949850f6c9dde5da6356": {
       "workers": {
         "app/(cms)/tenants/page": {
           "moduleId": 67548,

@@ -1,6 +1,6 @@
 {
   "node": {
-    "003abdea1bebe025a462efeac684d81daa6c40da37": {
+    "00f59a902a7360d1b224ddb69b8b5366be59364fe9": {
       "workers": {
         "app/(cms)/posts/page": {
           "moduleId": 216,
@@ -15,7 +15,7 @@
       "exportedName": "listPosts",
       "filename": "src/actions/posts.ts"
     },
-    "404597e3dcd148939d0f10f47392d6103b22e2c95d": {
+    "40a2c4fed05047b8ba44eda8fa8b4945b6704baaf3": {
       "workers": {
         "app/(cms)/posts/page": {
           "moduleId": 216,
